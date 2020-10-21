@@ -1,8 +1,7 @@
-#include Shape.h
-#include Shape.cpp
+#include "Shape.h"
 using namespace std;
 
-main {
+int main {
     // Let's test Shape.cpp
 
    Circle (circ, 12.0);
@@ -25,4 +24,4 @@ main {
 
 cout << shapeName.getArea() << endl;
 
-}
+};
