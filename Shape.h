@@ -14,7 +14,7 @@ class Shape
 
         double getArea();
 
-        void print( string name, double width, double height );
+        void print();
         // virtual void print();      // for later testing
         // virtual void print() = 0;  // for later testing
 };
