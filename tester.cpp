@@ -1,28 +1,25 @@
-#include Shape.h
-#include Shape.cpp
+#include "Shape.h"
+#include "Rectangle.h"
+#include "Shape.cpp"
+#include <iostream>
 using namespace std;
 
-main {
+int main() {
     // Let's test Shape.cpp
+    //Circle circ;
+    //Triangle tri;
 
-   Circle (circ, 12.0);
-   cout << "Testing area method for circle: " << ""
-   cout << circ.getArea() << endl;
 
-   Triangle (tri, 5.0, 4.0);
-   cout << "Testing area method for triangle: " << ""
-   cout << tri.getArea() << endl;
+   //Shape circ(Circle, 12.0);
+   //cout << "Testing area method for circle: " << ""
+   //cout << circ.getArea() << endl;
 
-    Rectangle (rect, 4.0, 5.0);
+   //Shape tri(Triangle, 5.0, 4.0);
+   //cout << "Testing area method for triangle: " << ""
+   //cout << tri.getArea() << endl;
+
+    Shape rect(Rectangle, 4.0, 5.0);
     cout << "Testing area method for rectangle: " << ""
     cout << rect.getArea() << endl;
-
-
-
-
-
-
-
-cout << shapeName.getArea() << endl;
 
 }

@@ -1,13 +1,13 @@
-EXECS = Tester
-OBJS = Tester.o Shape.o
-HDRS = Shape.h
+EXECS = tester
+OBJS = tester.o Shape.o Rectangle.o
+HDRS = Shape.h Rectangle.h
 
 CC = g++
 CCFLAGS = -std=c++17 -Wall -Wno-deprecated -Werror=return-type -g
 
 all: $(EXECS)
 
-Tester: $(OBJS)
+tester: $(OBJS)
 	$(CC) $(CCFLAGS) $^ -o $@
 
 %.o: %.cpp *.h

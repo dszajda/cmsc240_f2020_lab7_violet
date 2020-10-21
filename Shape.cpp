@@ -1,24 +1,27 @@
 #include "Shape.h"
-#include "Circle.h"
-#include "Triangle.h"
-#include "Sqaure.h"
+//#include "Circle.h"
+//#include "Triangle.h"
+#include "Rectangle.h"
 #include <iostream>
 
 //Constructor
 Shape::Shape(std::string shapeName)
 {
-    if(shapeName == "Circle"){
-        name = new Circle;
-    }else if(shapeName == "Square") {
-        name = new Square;
-    }else{
-        name = new Triangle;
+    //if(shapeName == "Circle"){
+    //    name = new Circle;
+    //}
+    //if(shapeName == "Triangle") {
+    //    name = new Triangle;
+    //}
+
+    if(shapeName == "Rectangle"){
+       Rectangle name;
     }
 
 }
 
 
-~shape::shape(){}
+Shape::~Shape(){}
 
 
 double Shape::getArea()

@@ -3,6 +3,10 @@
 using namespace std;
 
 Rectangle(std::string name, double width, double height){
+   name = name;
+   width = width;
+   height = height; 
+}
 
 
     double getArea(double width, double height){
@@ -21,4 +25,3 @@ Rectangle(std::string name, double width, double height){
         cout << "Height of rectangle: " << "";
         cout << height << endl;
     }
-}
