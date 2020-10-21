@@ -1,9 +1,7 @@
-#ifndef __SHAPE_H__
-#define __SHAPE_H__
-
 #include <string>
+#include "Shape.h"
 
-class Shape
+class Rectangle
 {
     private:
         std::string name;
@@ -11,8 +9,8 @@ class Shape
         double height;
 
     public:
-        Shape(std::string shapeName);
-        ~Shape();
+        Rectangle(std::string name,  double width, double height);
+        ~Rectangle();
 
         double getArea();
 
@@ -21,5 +19,5 @@ class Shape
         // virtual void print() = 0;  // for later testing
 };
 
-#endif
+
 

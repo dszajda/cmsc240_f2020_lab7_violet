@@ -1,7 +1,7 @@
 #include "Shape.h"
 #include "Circle.h"
 #include "Triangle.h"
-#include "Sqaure.h"
+#include "Rectangle.h"
 #include <iostream>
 
 //Constructor

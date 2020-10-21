@@ -1,24 +1,30 @@
-#include Shape.h
-#include Rectangel.h
+#include "Shape.h"
+#include "Rectangle.h"
+#include <iostream>
+
 using namespace std;
 
-Rectangle(std::string name, double width, double height){
+Rectangle :: Rectangle(std::string name, double width, double height) : Shape(name)
+    name = name;
+    width = width;
+    height = height;
+
+}
 
 
-    double getArea(double width, double height){
+double Rectangle::getArea( double width, double height){
 
-        return width * height;
+    return width * height;
 
-    }
+}
 
-    void print( double width, double height ){
-        cout << "Name of rectangle: " << "";
-        cout << name << endl;
+void Rectangle::print( double width, double height ){
+    cout << "Name of rectangle: " << "";
+    cout << name << endl;
 
-        cout << "Width of rectangle: " << "";
-        cout << width << endl;
+    cout << "Width of rectangle: " << "";
+    cout << width << endl;
 
-        cout << "Height of rectangle: " << "";
-        cout << height << endl;
-    }
+    cout << "Height of rectangle: " << "";
+    cout << height << endl;
 }
