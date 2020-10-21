@@ -4,7 +4,7 @@
 
 using namespace std;
 
-Rectangle :: Rectangle(std::string name, double width, double height) : Shape(name)
+Rectangle :: Rectangle( string name, double width, double height) : Shape(name) {
     name = name;
     width = width;
     height = height;
@@ -12,13 +12,13 @@ Rectangle :: Rectangle(std::string name, double width, double height) : Shape(na
 }
 
 
-double Rectangle::getArea( double width, double height){
+double Rectangle::getArea(){
 
     return width * height;
 
 }
 
-void Rectangle::print( double width, double height ){
+void Rectangle::print(){
     cout << "Name of rectangle: " << "";
     cout << name << endl;
 

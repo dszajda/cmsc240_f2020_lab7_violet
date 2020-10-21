@@ -8,7 +8,7 @@
 Shape::Shape(std::string shapeName)
 {
     name = shapeName;
-}
+};
 
 
 Shape::~Shape(){}
