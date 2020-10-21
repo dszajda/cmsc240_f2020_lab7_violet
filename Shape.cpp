@@ -7,28 +7,24 @@
 //Constructor
 Shape::Shape(std::string shapeName)
 {
-    if(shapeName == "Circle"){
-        name = new Circle;
-    }else if(shapeName == "Square") {
-        name = new Square;
-    }else{
-        name = new Triangle;
-    }
-
+    name = shapeName;
 }
 
 
-~shape::shape(){}
+Shape::~Shape(){}
 
 
 double Shape::getArea()
 {
-    return name.getArea();
+    double area = 0.0;
+    return area;
 }
+
 
 
 void Shape::print()
 {
-    name.print();
+    
+    std::cout << name << std::endl;
 }
 
