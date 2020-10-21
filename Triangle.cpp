@@ -2,7 +2,7 @@
 #include "Triangle.h"
 #include <iostream>
 
-Triangle :: Triangle(std::string name, double base, double height) : Shape(name)
+Triangle :: Triangle(std::string name, double base, double height) 
 {
     triangle_name = name;
     triangle_base = base;
@@ -23,7 +23,7 @@ double Triangle::getArea()
 
 void Triangle::print()
 {
-    std::cout << "Shape name : " << triangle_name << std::endl;
-    std::cout << "Area :" << getArea() << std::endl;
+    std::cout << "Triangle's name : " << triangle_name << std::endl;
+    std::cout << "Triangle's Area :" << getArea() << std::endl;
 };
 

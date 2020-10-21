@@ -2,6 +2,9 @@
 #define __SHAPE_H__
 
 #include <string>
+#include "Rectangle.h"
+#include "Triangle.h"
+#include "Circle.h"
 
 class Shape
 {

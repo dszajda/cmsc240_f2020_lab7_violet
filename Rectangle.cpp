@@ -4,27 +4,27 @@
 
 using namespace std;
 
-Rectangle :: Rectangle( string name, double width, double height) : Shape(name) {
-    name = name;
-    width = width;
-    height = height;
-
+Rectangle :: Rectangle( string name, double width, double height) {
+    myName = name;
+    myWidth = width;
+    myHeight = height;
 }
-
 
 double Rectangle::getArea(){
 
-    return width * height;
+    return myWidth * myHeight;
 
 }
 
 void Rectangle::print(){
-    cout << "Name of rectangle: " << "";
-    cout << name << endl;
+    cout << "Rectangle's name: " << "";
+    cout << myName << endl;
 
     cout << "Width of rectangle: " << "";
-    cout << width << endl;
+    cout << myWidth << endl;
 
     cout << "Height of rectangle: " << "";
-    cout << height << endl;
+    cout << myHeight << endl;
 }
+
+ Rectangle::~Rectangle(){};

@@ -1,6 +1,6 @@
 EXECS = tester
-OBJS = tester.o Shape.o
-HDRS = Shape.h
+OBJS = tester.o Shape.o Rectangle.o Triangle.o Circle.o
+HDRS = Shape.h Rectangle.h Triangle.h Circle.h
 
 CC = g++
 CCFLAGS = -std=c++17 -Wall -Wno-deprecated -Werror=return-type -g

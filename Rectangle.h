@@ -1,12 +1,12 @@
-#include <string>
-#include "Shape.h"
+#ifndef __RECTANGLE_H__
+#define __RECTANGLE_H__
 
-class Rectangle
+class Rectangle 
 {
     private:
-        std::string name;
-        double width;
-        double height;
+        std::string myName;
+        double myWidth;
+        double myHeight;
 
     public:
         Rectangle(std::string name,  double width, double height);
@@ -19,5 +19,5 @@ class Rectangle
         // virtual void print() = 0;  // for later testing
 };
 
-
+#endif
 

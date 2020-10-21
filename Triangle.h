@@ -2,7 +2,7 @@
 #define Triangle_hpp
 
 #include <stdio.h>
-class Triangle : public Shape
+class Triangle 
 {
 
 private:

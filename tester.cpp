@@ -1,11 +1,11 @@
 #include "Shape.h"
-#include "Shape.cpp"
+#include <iostream>
 using namespace std;
+
 
 int main() {
     // Let's test Shape.cpp
-    //Circle circ;
-    //Triangle tri;
+   
 
    Circle myCircle("circ", 12.0);
    cout << "Testing area method for circle: " << "";
@@ -19,5 +19,18 @@ int main() {
     cout << "Testing area method for rectangle: " << "";
     cout << myRectangle.getArea() << endl;
 
+    cout << endl;
+   
+   cout << "Testing print method for circle: " << endl;
+   myCircle.print();
+   cout << endl;
+
+   cout << "Testing print method for triangle: " << endl;
+   myTriangle.print() ;
+   cout << endl;
+
+   cout << "Testing print method for rectangle: " << endl;
+   myRectangle.print() ;
+   cout << endl;
 
 };
